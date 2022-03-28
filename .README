@@ -1,0 +1,50 @@
+-- Database: php2_asm
+-- File database: php2_asm.sql
+-- File connect database: model/database.php 
+
+
+-- Link trang chủ: http://localhost/php2_asm/ 
+---- Tài khoản test: + username: chi 
+                     + password: 123
+
+
+-- Link trang admin: http://localhost/php2_asm/admin/
+---- Tài khoản admin: + username: admin 
+                      + password: admin
+
+
+-- Thông tin thẻ test thanh toán online:
+---- Số thẻ: 9704198526191432198
+---- Tên chủ thẻ: NGUYEN VAN A
+---- Ngày phát hành: 07/15
+---- Mật khẩu OTP: 123456
+
+
+-- Gởi email thông báo đặt hàng thành công (Bắt buộc phải cấu hình để test chức năng gởi mail)
+---- Cấu hình file php.ini 
+        C:\xampp\php\php.ini
+
+        SMTP=smtp.gmail.com
+        smtp_port=587
+        sendmail_from = email-người-gửi@gmail.com
+        sendmail_path = "C:\xampp\sendmail\sendmail.exe -t"
+
+
+        -- Cấu hình file sendmail.ini
+        C:\xampp\sendmail\sendmail.ini
+
+        smtp_server=smtp.gmail.com
+        smtp_port=587
+        error_logfile=error.log
+        debug_logfile=debug.log
+        auth_username=email-người-gửi@gmail.com
+        auth_password=mật-khẩu-email
+        force_sender=email-người-gửi@gmail.com
+
+---- Khởi động lại XAMPP
+
+---- Bật cho phép ứng dụng kém an toàn của Gmail (Quyền truy cập của ứng dụng kém an toàn)
+
+
+---- Xem kết quả trong thư mục result
+
